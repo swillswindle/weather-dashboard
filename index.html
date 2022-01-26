@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Check!</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./Assets/style.css"/>
+</head>
+
+<body class="bg-dark">
+    
+    <header class="header text-center text-light bg-dark p-3">
+        <h1>Weather Dashboard</h1>
+    </header>
+<div class="row">
+<!-- sidebar -->
+<div class="col-3 text-light">
+    <div>
+    <label for="form"><h2 class="font-weight-bold">Search for a City:</h2></label>
+    <form id="form" class="border-bottom" action="submit">
+        <input  type="text" id="searchfield"placeholder="San Diego" value="San Diego" class="w-100 m-2 p-2">
+        <button type="submit" class=" btn btn-primary w-100 m-2">Search</button>
+    </form>
+    </div>
+    
+<!-- search history -->
+    <div class="">
+        <button class="m-2 btn btn-secondary w-100">
+            City
+        </button>
+        <button class="m-2 btn btn-secondary w-100">
+            City
+        </button>
+        <button class="m-2 btn btn-secondary w-100">
+            City
+        </button>
+        <button class="m-2 btn btn-secondary w-100">
+            City
+        </button>
+        
+    </div>
+
+</div>
+
+<!-- weather info -->
+<div class="col-8 m-3 p-3 text-light">
+<div class="border p-2">
+<h2 id="city-name" class="font-weight-bold">City Name (date)(weather icon)</h2><img class="float-right" id="icon" src=""/>
+<p id="temp"> Temp: 00.00&#176;F</p>
+<p id="wind">Wind: 0.00 MPH</p>
+<p id="hum">Humidity: 0%</p>
+<p id="uv">UV Index: image </p>
+</div>
+<!-- five day forecast -->
+
+<h4 class="font-weight-bold p-2">5-Day Forecast:</h4>
+<div class="row w-100 justify-content-center">
+    
+    <div id="card1" class="card bg-secondary text-light m-auto p-2">
+        <h4>Date+1</h4>
+        <img src="" alt="">
+        <p>Temp: 00.00&#176;F</p>
+        <p>Wind: 0.00 MPH</p>
+        <p>Humidity: 0%</p>
+    </div>
+    <div id="card2" class="card bg-secondary text-light m-auto p-2">
+        <h4>Date+2</h4>
+        <img src="" alt="">
+        <p>Temp: 00.00&#176;F</p>
+        <p>Wind: 0.00 MPH</p>
+        <p>Humidity: 0%</p>
+    </div>
+    <div id="card3" class="card bg-secondary text-light m-auto p-2">
+        <h4>Date+3</h4>
+        <img src="" alt="">
+        <p>Temp: 00.00&#176;F</p>
+        <p>Wind: 0.00 MPH</p>
+        <p>Humidity: 0%</p>
+    </div>
+    <div id="card4" class="card bg-secondary text-light m-auto p-2">
+        <h4>Date+4</h4>
+        <img src="" alt="">
+        <p>Temp: 00.00&#176;F</p>
+        <p>Wind: 0.00 MPH</p>
+        <p>Humidity: 0%</p>
+    </div>
+    <div id="card5" class="card bg-secondary text-light m-auto p-2">
+        <h4>Date+5</h4>
+        <img src="" alt="">
+        <p>Temp: 00.00&#176;F</p>
+        <p>Wind: 0.00 MPH</p>
+        <p>Humidity: 0%</p>
+    </div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./Assets/app.js"></script>
+</html>
