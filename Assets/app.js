@@ -29,7 +29,7 @@ async function getLocation() {
   lat = location[0].lat;
   lon = location[0].lon;
   let queryURL =
-    "http://api.openweathermap.org/data/2.5/onecall?lat=" +
+    "https://api.openweathermap.org/data/2.5/onecall?lat=" +
     lat +
     "&lon=" +
     lon +
@@ -105,7 +105,7 @@ form.addEventListener("submit", getLocation);
 //     ")";
 
 //   let iconID = weather.current.weather[0].icon;
-//   let iconURL = "http://openweathermap.org/img/wn/" + iconID + "@2x.png";
+//   let iconURL = "://openweathermap.org/img/wn/" + iconID + "@2x.png";
 //   console.log(iconURL);
 //   document.getElementById("icon").src = iconURL;
 
