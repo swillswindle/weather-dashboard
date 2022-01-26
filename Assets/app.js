@@ -23,7 +23,7 @@ async function getLocation() {
     event.preventDefault()
   let form = document.getElementById("searchfield").value;
   city = form;
-  let locationURL = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`;
+  let locationURL = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`;
   let location = await (await fetch(locationURL)).json();
   console.log(location);
   lat = location[0].lat;
