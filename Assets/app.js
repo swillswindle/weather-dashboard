@@ -41,7 +41,7 @@ async function getLocation() {
   console.log(weather);
   let cityName = document.getElementById("city-name");
   cityName.innerHTML =
-    weather.timezone +
+    city +
     " (" +
     (today.getMonth() + 1) +
     "/" +
