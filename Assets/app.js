@@ -51,7 +51,7 @@ async function getLocation() {
     ")";
 
   let iconID = weather.current.weather[0].icon;
-  let iconURL = "http://openweathermap.org/img/wn/" + iconID + "@2x.png";
+  let iconURL = "https://openweathermap.org/img/wn/" + iconID + "@2x.png";
   console.log(iconURL);
   document.getElementById("icon").src = iconURL;
 
@@ -73,7 +73,7 @@ async function getLocation() {
     var hum = weather.daily[i].humidity;
 
     card.innerHTML = `<h4>${date}</h4>
-    <img src="http://openweathermap.org/img/wn/${icon}@2x.png"" alt="">
+    <img src="https://openweathermap.org/img/wn/${icon}@2x.png"" alt="">
     <p>Temp: ${temp}&#176;F</p>
     <p>Wind: ${wind} MPH</p>
     <p>Humidity: ${hum}%</p>`;
