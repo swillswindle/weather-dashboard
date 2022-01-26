@@ -5,8 +5,6 @@ let wind = document.getElementById("wind");
 let hum = document.getElementById("hum");
 let uv = document.getElementById("uv");
 // console.log(locationURL);
-var lat = "";
-var lon = "";
 
 let today = new Date();
 
@@ -88,7 +86,7 @@ getLocation();
 
 form.addEventListener("submit", getLocation);
 
-function writeHistory
+// function writeHistory
 
 // console.log(queryURL);
 
@@ -136,5 +134,3 @@ function writeHistory
 //     i++;
 //   });
 // }
-
-// getWeather();
